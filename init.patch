@@ -1,0 +1,26 @@
+From 68515b29098d86a86de7e31d0d4bbb66bc2687f3 Mon Sep 17 00:00:00 2001
+From: Moe <musavimoe@gmail.com>
+Date: Fri, 26 Jan 2024 11:01:57 +0100
+Subject: [PATCH] add npm commands
+
+---
+ package.json | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+diff --git a/package.json b/package.json
+index cf0d21b..2b79514 100644
+--- a/package.json
++++ b/package.json
+@@ -7,7 +7,8 @@
+   "angular-cli": {},
+   "scripts": {
+     "ng": "ng",
+-    "start": "node dist/server/app.js",
++    "import": "node scripts/importDataset.js",
++    "start": "tsc -p server && node dist/server/app.js",
+     "build": "ng build",
+     "test": "ng test",
+     "lint": "ng lint",
+-- 
+2.39.3 (Apple Git-145)
+
